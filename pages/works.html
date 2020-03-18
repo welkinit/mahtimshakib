@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title>Music factory - Music destination</title>
+        <link rel="stylesheet" href="./worksStyle.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Raleway:100,400,500,700|Roboto:100,300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body>
+        
+        <div id="navbar">
+
+            <h1>MUSIC FACTORY</h1>
+
+            <div>
+
+                <p><a href="../index.html">HOME</a></p>
+
+                <p>WORKS</p>
+
+                <p><a href="./team.html">KNOW US</a></p>
+
+            </div>
+
+        </div>
+        
+        <div id="container1">
+            
+            <div id="playlist">
+            
+                <h1>PLAYLIST</h1>
+                
+                <div id="list">
+                    
+                    
+                    
+                    <div class="listitem" 
+                         imgSrc="../media/worksMedia/bubble_thumb.png"
+                         title="VAX & Sorana - Bubble Gum (Audio)"
+                         desc="Classical guitar are very noice"
+                         audioSrc="../media/worksMedia/bubblegum.mp3"
+                         external="https://www.youtube.com/watch?v=SmB6shj8qmE">
+                        <i></i>
+                        <div>
+                            <h3></h3><p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="listitem" 
+                         imgSrc="http://i3.ytimg.com/vi/ZQ5RCASdpuE/maxresdefault.jpg"
+                         title="Master-D - Tumi Jaio Na ft. Mumzy Stranger"
+                         desc="Hegab koe? :'("
+                         audioSrc="../media/worksMedia/tumi_jaba_na.mp3">
+                        <i></i>
+                        <div>
+                            <h3></h3><p></p>
+                        </div>
+                    </div>
+                
+                    <div class="listitem" 
+                         imgSrc="../media/worksMedia/khoka_thumbnail.png"
+                         title="Khoka (feat Ferdous Wahid) Pritom"
+                         desc="Ami juwan ekta pola"
+                         audioSrc="../media/worksMedia/khoka2.mp3"
+                         external="https://www.youtube.com/watch?v=nhy6vXsPb9c">
+                        <i></i>
+                        <div>
+                            <h3></h3><p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="listitem" 
+                         imgSrc="https://i.ytimg.com/vi/8kkIo8P6GZw/0.jpg"
+                         title="Loote - 85% ft. gnash"
+                         desc="A TVC for pran frooto on july 2"
+                         audioSrc="../media/worksMedia/loote_85.mp3">
+                        <i></i>
+                        <div>
+                            <h3></h3><p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="listitem" 
+                         imgSrc="https://i.ytimg.com/vi/1DiyAanhVx0/0.jpg"
+                         title="Khub tes"
+                         desc="Ami ekhn vaat khabo"
+                         audioSrc="../media/worksMedia/khub_tes.mp3">
+                        <i></i>
+                        <div>
+                            <h3></h3><p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="listitem" 
+                         imgSrc="https://i.ytimg.com/vi/1DiyAanhVx0/0.jpg"
+                         title="Khub tes na"
+                         desc="Ami ekhn vaat khabo"
+                         audioSrc="../media/worksMedia/khub_tes.mp3">
+                        <i></i>
+                        <div>
+                            <h3></h3><p></p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                </div>
+            
+            </div>
+            
+            <div id="actual_holder">
+                
+                <div id="credit_holder">
+                
+                    <i class="fas fa-info-circle info"></i>
+                    
+                    <p>Site developer info</p>
+                
+                </div>
+                
+                <div id="img">
+                
+                    <i class="fab fa-youtube" id="yt"></i>
+                    
+                </div>
+            
+                <div id="wave_holder">
+                
+                    <div id="wave"></div>
+                
+                </div>
+                
+                <div id="loading_holder">
+                
+                    <div id="loading_text">
+                    
+                        <p id="loading_per">Loading 0%</p>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+            
+        </div>
+        
+        <div id="bottombar">
+            
+            <div id="controls">
+            
+                <div id="previous">
+            
+                    <i class="fas fa-backward"></i>
+
+                </div>
+
+                <div id="playpause">
+
+                    <i class="fas fa-play" id="play"></i>
+                    <i class="fas fa-pause" id="pause" style="display: none"></i>
+
+                </div>
+
+                <div id="forward">
+
+                    <i class="fas fa-forward"></i>
+
+                </div>
+                
+                <div id="muteunmute">
+                
+                    <i class="fas fa-volume-up" id="mute"></i>
+                    <i class="fas fa-volume-mute" id="unmute" style="display: none"></i>
+                
+                </div>
+            
+            </div>
+            
+            <input type="range" min="1" max="100" value="80" id="volume">
+        
+            <div id="control_text">
+            
+                <p id="now">Now playing: </p>
+            
+            </div>
+            
+            <div id="duration_holder">
+            
+                <p id="dur_now">0:00</p>
+                <p>/</p>
+                <p id="dur_total">0:00</p>
+            
+            </div>
+        
+        
+        </div>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script src="../wavesurfer.js"></script>
+        
+        <script>                
+                
+            
+            $( document ).ready(function() {
+                
+                var playingCount = 0;
+                
+                var wavesurfer = WaveSurfer.create({
+                    container: '#wave',
+                    barWidth: 2,
+                    cursorWidth: 1,
+                    progressColor: "#f44283",
+                    waveColor: "#0094ff",
+                    cursorColor: "#dbdbdb",
+                    fillParent: true,
+                    skipLength: 10
+                });
+
+                wavesurfer.on('ready', function () {
+                    wavesurfer.setVolume(.8);
+                    if(!wavesurfer.isPlaying()){
+                        wavesurfer.play();
+                    }
+                    if(wavesurfer.isPlaying()){
+                        $("#play").css({"opacity":"none"})
+                        $("#pause").css({"display":"block"})
+                    }
+                    $("#dur_total").text(formatTime(wavesurfer.getDuration()))
+                    $("#wave").css({"opacity":"1"})
+                });
+
+                wavesurfer.on("pause", function(){
+                    $("#play").css({"display":"block"})
+                    $("#pause").css({"display":"none"})
+                })
+
+                wavesurfer.on("play", function(){
+                    $("#play").css({"display":"none"})
+                    $("#pause").css({"display":"block"})
+                })
+
+                wavesurfer.on("audioprocess", function(){
+                    $("#dur_now").text(formatTime(wavesurfer.getCurrentTime()))
+                })
+                
+                wavesurfer.on("loading", function(e){
+                    
+                    $("#loading_holder").fadeIn(0)
+                    $("#wave").css({"opacity":"0"})
+                    $("#loading_per").text("Loading " + e + "%");
+                    if(e == 100){
+                        $("#loading_holder").fadeOut(400)
+                        
+                    }
+                    
+                })
+                  
+                wavesurfer.on("mute", function(mute){
+                    
+                    if(mute){
+                        $("#mute").css({"display":"none"})
+                        $("#unmute").css({"display":"block"})
+                    }else{
+                        $("#mute").css({"display":"block"})
+                        $("#unmute").css({"display":"none"})
+                    }
+                    
+                })
+                
+                wavesurfer.on("finish", function (){
+                    
+                    var nextDiv = $(".listitem").eq(playingCount + 1);
+                    
+                    if((playingCount + 1) == $(".listitem").length){
+                        nextDiv = $(".listitem").eq(0);
+                        playingCount = -1;
+                    }
+
+                    var audioSrc = nextDiv.attr("audioSrc");
+                    wavesurfer.load(audioSrc);
+                    $("#now").text("Now playing: " + nextDiv.attr("title"))
+                    var src = nextDiv.attr("imgSrc");
+                    $("#img").css({
+                        'background-image': "url(" + src + ")"
+                    });
+                    $( ".listitem div h3" ).each(function( index ) {
+                        $(this).css({"color":"#fff"})
+                    })
+                    nextDiv.find("h3").css({"color":"#6dbaff"})
+                    
+                    playingCount++;
+                    
+                })
+                
+                $("#credit_holder").on("click", function(){
+                    
+                    window.open("https://www.facebook.com/TheRealAneek", '_blank')
+                    
+                })
+
+                $(".listitem").on('click', function(event){
+
+                    var audioSrc = $(this).attr("audioSrc");
+                    wavesurfer.load(audioSrc);
+                    $("#now").text("Now playing: " + $(this).attr("title"))
+                    var src = $(this).attr("imgSrc");
+                    $('<img/>').attr('src', src).on('load', function() {
+                       $(this).remove(); 
+                       $("#img").css({
+                            'background-image': "url(" + src + ")"
+                        });
+                    });
+                    $( ".listitem div h3" ).each(function( index ) {
+                        $(this).css({"color":"#fff"})
+                    })
+                    $(this).find("h3").css({"color":"#6dbaff"})
+                    playingCount = parseInt($(this).attr("count"));
+                    
+                });
+
+                $("#playpause").on("click", function(e){
+
+                    wavesurfer.playPause();
+
+                 })
+                
+                $("#muteunmute").on("click", function(e){
+                    
+                    wavesurfer.toggleMute();
+                    
+                })
+                
+                $("#forward").on("click", function(e){
+                    
+                    wavesurfer.skipForward();
+                    
+                })
+                
+                $("#previous").on("click", function(e){
+                    
+                    wavesurfer.skipBackward();
+                    
+                })
+                
+                $("#volume").on("input", function(e){
+                    
+                    wavesurfer.setVolume($(this).val() / 100);
+                    $("#mute").css({"display":"block"})
+                    $("#unmute").css({"display":"none"})
+                    wavesurfer.setMute(false)
+                    
+                })
+                
+                $("#img").on("click", function(e){
+                    
+                    var url = $(".listitem").eq(playingCount).attr("external")
+                    window.open(url, '_blank')
+                    
+                })
+                
+                function loadFirstAudio(){
+                
+                    var thisDiv = $(".listitem").first(); 
+
+                    thisDiv.find("h3").css({
+                        "color":"#6dbaff"
+                     })
+                    $("#now").text("Now playing: " + thisDiv.attr("title"))
+                    var src = thisDiv.attr("imgSrc");
+
+                    $('<img/>').attr('src', src).on('load', function() {
+                       $(this).remove(); 
+                       $("#img").css({
+                            'background-image': "url(" + src + ")"
+                        });
+                    });
+                    
+                    var audioSrc = thisDiv.attr("audioSrc");
+                    wavesurfer.load(audioSrc);
+                }
+                
+                function loadPlaylist(){
+                    
+                    $( ".listitem" ).each(function( index ) {
+
+                        var src = $(this).attr("imgSrc");
+                        $( this ).find("i").css({
+                            'background-image': "url(" + src + ")"
+                        });
+                        var title = $(this).attr("title");
+                        $( this ).find("h3").text(title);
+                        var desc = $(this).attr("desc");
+                        $( this ).find("p").text(desc);
+                        $(this).attr("count", index.toString());
+
+                    });
+                    
+                }
+                
+                function setArrowKeyListeners(){
+                
+                    $(document).keydown(function(e) {
+                        switch(e.which) {
+                            case 37: // left
+                                wavesurfer.skipBackward();
+                            break;
+
+                            case 39: // right
+                                wavesurfer.skipForward();
+                            break;
+
+                            case 32: // space
+                                wavesurfer.playPause();
+                            break;
+                                
+                            default: return; // exit this handler for other keys
+                        }
+                        e.preventDefault(); // prevent the default action (scroll / move caret)
+                    });
+
+                }
+                
+                loadPlaylist();
+                loadFirstAudio();
+                setArrowKeyListeners()
+                
+            })
+            
+            
+
+            function formatTime(time){
+                time = Math.round(time);
+
+                var minutes = Math.floor(time / 60),
+                    seconds = time - minutes * 60;
+
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                return minutes + ":" + seconds;
+            }
+
+        
+        </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600|Poppins:300,400,500,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fb6f11a9d8.js"></script>
+    
+        <style>
+            
+            body{
+                
+                background-color: #fff;
+                animation-name: anim;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                
+            }
+            
+            @keyframes anim{
+                
+                from{background-color: #fff;}
+                
+                to{background-color: #000;}
+                
+            }
+            
+            #holder{
+                
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                
+            }
+            
+            p{
+                
+                color: #fff;
+                margin: 0;
+                font-family: poppins;
+                font-weight: 100;
+                font-size: 1em;
+                
+                animation-name: anim1;
+                animation-duration: 1s;
+                animation-delay: .8s;
+                animation-fill-mode: forwards;
+                opacity: 0;
+                
+            }
+        
+            h2{
+                
+                color: #fff;
+                margin: 0;
+                font-family: poppins;
+                font-size: 3em;
+                font-weight: 200;
+                
+                
+                animation-name: anim1;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                
+            }
+            
+            @keyframes anim1{
+                
+                from{color: #000; margin-left: -1em;}
+                
+                to{color: #fff; margin-left: 0; opacity: 1}
+                
+            }
+            
+            span{
+                
+                font-size: .4em;
+                position: absolute;
+                
+            }
+            
+        
+        </style>
+    
+    </head>
+    
+    <body>
+    
+        <div id="holder">
+        
+            <p>A product of</p>
+
+            <h2>BEAR Technologies<span>&reg;</span></h2>
+            
+        </div>
+        
+
+            
+    </body>
+
+</html>

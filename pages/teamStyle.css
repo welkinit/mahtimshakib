@@ -1,0 +1,666 @@
+*{
+    box-sizing: border-box !important;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a{
+    
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+
+#navbar{
+    
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    left: 0;
+    display: flex;
+    transition: .3s;
+    box-shadow: 0px 0px 1em rgba(0,0,0,.1);
+    background-color: #fff
+    
+}
+
+#navbar h1{
+    
+    margin: auto auto auto 1.3em;
+    font-family: Lato;
+    flex: 1;
+    color: #000;
+    font-weight: 900;
+    
+}
+
+#navbar div{
+    
+    display: flex;
+    margin-right: 1em;
+    
+}
+
+#navbar div p{
+    
+    font-family: Lato;
+    color: #000;
+    margin: auto .2em;
+    padding: .5em 1em;
+    font-weight: 700;
+    border: 1px solid transparent;
+    
+}
+
+#navbar div p:nth-child(3){
+    
+    border: 1px solid rgba(000,000,000,.04);
+    border-radius: .2em;
+    
+}
+
+#container1{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+#intro, #intro2{
+    
+    z-index: 2;
+    margin: auto 3em;
+}
+
+#intro{
+    cursor: pointer;
+}
+
+#intro h1{
+    
+    color: #000;
+    font-family: raleway;
+    font-weight: 500;
+    font-size: 8vw;
+    margin: 0;
+    transform: translateX(-100px);
+    opacity: 0;
+    animation-name: introanim;
+    animation: introanim 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+#intro p{
+    
+    font-family: raleway;
+    font-weight: 200;
+    font-size: 1.5vw;
+    margin: 0;
+    max-width: 22.2em;
+    transform: translateX(-100px);
+    opacity: 0;
+    animation: introanim 1.2s ease-out .4s;
+    animation-fill-mode: forwards;
+}
+
+#intro h2{
+    
+    color: #e8e8e8;
+    font-family: raleway;
+    font-weight: 500;
+    font-size: 2vw;
+    margin: 1em 0 0 0;
+    position: relative;
+    transition: .2s;
+    transform: translateX(-100px);
+    opacity: 0;
+    animation: introanim 1.2s ease-out .8s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes introanim{
+    
+    from{transform: translateX(-100px);
+    opacity: 0;}
+    to{transform: translateX(0em);
+    opacity: 1;}
+    
+}
+
+#intro:hover h2{
+    
+    color: #000;
+    
+}
+
+#intro h2 i{
+    
+    margin-left: .3em;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: .9em
+    
+}
+
+#intro_pic{
+    
+    width: 24em;
+    height: 75vh;
+    background-image: url(../media/homeMedia/music_big_bg.jpg);
+    margin:auto auto 0 auto;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.33);
+    transform: translateY(5.5em);
+    animation-name: intro;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+#intro_pic:hover{
+    
+    filter: brightness(.9);
+    
+}
+
+@keyframes intro{
+    
+    from{transform: translateY(5em); opacity: 0;}
+    to{transform: translateY(0em); opacity: 1;}
+    
+}
+
+#container2{
+    
+    display: flex;
+    height: 100vw;
+    box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+    padding-top: 2vw;
+    max-height: 100vh;
+    
+}
+
+#intro2 h1{
+    
+    font-family: raleway;
+    font-size: 3vw;
+    font-weight: 500;
+    text-align: right;
+    margin: 0;
+    
+}
+
+#intro2 p{
+    
+    font-family: raleway;
+    font-size: 1.5vw;
+    max-width: 20em;
+    text-align: right;
+    margin: .5em 0;
+    align-self: flex-end;
+    font-weight: 200;
+    
+}
+
+#intro2{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column
+    
+}
+
+#moving_div{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    
+}
+
+#main_img{
+    
+    width: 36vw;
+    height: 29vw;
+    border-radius: 1em;
+    background-image: url("https://demos.creative-tim.com/marketplace/now-ui-kit-pro/assets/img/ipad.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    
+}
+
+.anim_div{
+    
+    position: absolute;
+    border-radius: .5em;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.1), 0 3px 14px 2px rgba(0, 0, 0, 0.05), 0 5px 5px -3px rgba(0, 0, 0, 0.05);
+    background-position: center;
+    background-size: cover;
+    z-index: 4;
+    
+}
+
+@keyframes mov1{
+    
+  from {transform: translate(50px, 0px); }
+  65% {transform: translate(0, 0); }
+  to {transform: translate(50px, 0px); } 
+    
+}
+@keyframes mov2{
+    
+  from {transform: translate(50px, 40px); }
+  65% {transform: translate(0, 0); }
+  to {transform: translate(50px, 40px); } 
+    
+}
+
+@keyframes mov3{
+    
+  from {transform: translate(70px, -70px); }
+  65% {transform: translate(0px, 0); }
+  to {transform: translate(70px, -70px); } 
+    
+}
+
+#img1{
+    
+    width: 11vw;
+    height: 11vw;
+    top: 60%;
+    left: 5%;
+    background-image: url("../media/homeMedia/music_big_bg.jpg");
+    animation-name: mov1;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+#img2{
+    
+    width: 20vw;
+    height: 11vw;
+    left: 30%;
+    top: 10%;
+    background-image: url("https://www.iamexpat.nl/sites/default/files/styles/article--full/public/concerts-amsterdam_0.jpg?itok=TWszOePD");
+    animation-name: mov2;
+    animation-duration: 17s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+#img3{
+    
+    width: 18vw;
+    height: 13vw;
+    left: 60%;
+    top: 60%;
+    background-image: url("http://refugepdx.com/wp-content/uploads/2018/06/1.jpg");
+    animation-name: mov3;
+    animation-duration:14s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+#container3{
+    
+    padding-top: 5em;
+    width: 100%;
+    position: relative;
+    background-image: url("../media/teamMedia/music-factory-particles.png");
+    background-size: contain;
+    overflow-x: hidden;
+    
+}
+
+#angle_div{
+    
+    height: 15em;
+    background-color: #fff;
+    position: absolute;
+    width: 200%;
+    top: -8em;
+    left: -3em;
+    transform: rotate(-5.2deg);
+    z-index: 1;
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+    
+}
+
+#container3holder{
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vw
+    
+}
+
+#container3holder > h1{
+    
+    text-align: center;
+    font-family: raleway;
+    font-weight: 500;
+    font-size: 3em;
+    z-index: 4444;
+    border-bottom: 3px solid #fff;
+    padding-bottom: .2em;
+    color: #fff;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 4em;
+    
+}
+
+.team_holder_big{
+    
+    margin-top: 3em;
+    margin: auto;
+    display: flex;
+    
+}
+
+.quote{
+    
+    height: 20vw;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 1em;
+    padding: 2em 2em 2em 4em;
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+    margin: auto;
+    margin-left: -2em;
+    
+}
+
+.quote p{
+    
+    margin: 0;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 1vw;
+    width: 28vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.quote p:before{
+    
+    content: "\201C";
+    font-size: 16em;
+    font-family: Catamaran;
+    position: absolute;
+    color: #d9d9d9;
+    margin-top: -.05em;
+    
+}
+
+.team_holder{
+    
+    margin-top: 3em;
+    width: 45vw;
+    height: 33vw;
+    background-color: #fff;
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.07);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    
+}
+
+.team_holder:hover{
+    
+    box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+    transform: translateY(-4px);
+    
+}
+
+.social_icon_holder{
+    
+    position: absolute;
+    right: 0;
+    padding: 2em;
+    display: flex;
+    align-items: center
+    
+}
+.social_icon_holder i{
+    
+    font-size: 2vw;
+    
+}
+
+.social_icon_holder i:nth-child(2){
+    
+    font-size: 2.16vw;
+    margin-left: .3em;
+    margin-right: .3em
+    
+}
+
+.social_icon_holder i:nth-child(3){
+    
+    font-size: 2.1vw;
+    
+}
+
+.team_holder_img{
+    
+    height: 10vw;
+    width: 10vw;
+    margin: auto auto 0 auto;
+    border-radius: 100em;
+    background-position: center;
+    background-size: cover
+    
+}
+
+.team_holder_text{
+    
+    margin: 0 auto auto auto;
+    
+}
+
+.team_holder h1{
+    
+    margin: 1em 0 .6em 0;
+    font-family: raleway;
+    font-weight: 200;
+    font-size: 2vw;
+    text-align: center
+    
+}
+
+.team_holder_text p{
+    
+    margin: 0;
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #878787;
+    transition: .3s;
+    
+}
+
+.team_holder:hover p{
+    
+    color: #1e394f;
+    
+}
+
+#plug_holder{
+    
+    height: 10em;
+    margin-top: 4em;
+    margin-bottom: 5em;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#leftplug{
+    
+    width: 100%;
+    height: 28px;
+    background-image: url(../media/teamMedia/plug.png);
+    background-repeat: no-repeat;
+    transform: rotate(180deg) translateY(50%);
+    position: absolute;
+    left: -50%;
+    margin-left: -14em;
+    top: 50%;
+    transition: .3s;
+    
+}
+
+#rightplug{
+    
+    width: 100%;
+    height: 28px;
+    background-image: url(../media/teamMedia/plug.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: 14em;
+    transform:  translateY(-50%);
+    top: 50%;
+    transition: .3s
+    
+}
+
+#plug_holder p{
+    
+    margin: auto;
+    padding: 1em 2em;
+    color: #fff;
+    background-color: #4286f4;
+    font-family: lato;
+    border-radius: .2em;
+    font-size: 1.4em;
+    z-index: 1000;
+    cursor: pointer;
+    transition: .3s
+     
+}
+
+#plug_holder p:hover{
+    
+    transform: scaleX(1.005)
+    
+}
+
+#container5{
+    
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    
+}
+
+#footer_stuff{
+    
+    height: 10em;
+    background-color: #000;
+    display: flex;
+    
+}
+
+#footer_stuff div{
+    
+    flex: 1;
+    padding: 2em
+    
+}
+
+#footer_stuff div p{
+    
+    margin: 0;
+    padding: .3em;
+    color: rgba(255,255,255,.7);
+    font-family: Raleway;
+    font-size: .8em;
+    cursor: pointer;
+    
+}
+
+#footer_stuff div p:hover{
+    
+    color: #fff;
+    
+}
+
+#bottom_bar p{
+    
+    margin: 0;
+    text-align: center;
+    padding: 1em;
+    color: rgba(255,255,255,.4);
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: .9em
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
