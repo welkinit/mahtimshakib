@@ -562,22 +562,28 @@ a{
     
 }
 
-#plug_holder p{
+#plug_holder a{
     
-    margin: auto;
+     margin: auto;
+    z-index: 1000;
+    
+}
+
+#checkout{
+    
     padding: 1em 2em;
     color: #fff;
     background-color: #4286f4;
     font-family: lato;
     border-radius: .2em;
     font-size: 1.4em;
-    z-index: 1000;
+    
     cursor: pointer;
     transition: .3s
      
 }
 
-#plug_holder p:hover{
+#checkout:hover{
     
     transform: scaleX(1.005)
     
