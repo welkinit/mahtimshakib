@@ -40,14 +40,14 @@ a{
     
 }
 
-#navbar div{
+#nav_menu{
     
     display: flex;
     margin-right: 1em;
     
 }
 
-#navbar div p{
+#nav_menu p{
     
     font-family: Lato;
     color: #fff;
@@ -82,6 +82,60 @@ a{
     
 }
 
+#mobile-menu-overlay{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10000000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#mobile-menu-overlay ul{
+    padding: 0
+}
+
+#mobile-menu-overlay ul li{
+    
+    color: rgba(255,255,255, .7);
+    list-style-type: none;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 2em;
+    padding: .4em;
+    
+}
+
+#mobile-menu-overlay ul li:nth-child(1){
+    color: white
+}
+
+#mobile-menu-close{
+    
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .8em;
+    
+}
+
+#menu_icon{
+    padding: 1em;
+    font-size: 1.5em;
+    color: rgba(255,255,255,.5);
+    transition: .2s;
+    display: none;
+}
+
 #main_first{
     
     height: 100vh;
@@ -89,17 +143,23 @@ a{
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-#bg_video{
-    
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
 
+#bg_video video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: 100
 }
 
 #vid_overlay{
@@ -108,6 +168,7 @@ a{
     height: 100%;
     background-image: linear-gradient(rgba(0,0,0,.3), #000);
     cursor: pointer;
+    z-index: 100;
     
 }
 
@@ -117,7 +178,7 @@ a{
     font-weight: 500;
     font-size: 5vw;
     position: absolute;
-    color: #fff;
+    color: rgba(255,255,255,.5);
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -129,7 +190,7 @@ a{
 #vid_overlay i{
     
     font-size: .7em;
-    color: rgba(255,255,255,1);
+    color: rgba(255,255,255,. 5);
     transition: .2s;
     transform: translateY(-.07em)
     
@@ -137,14 +198,14 @@ a{
 
 #vid_overlay:hover i{
     
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,1);
     transform: translateX(.2em) translateY(-.07em)
     
 }
 
 #vid_overlay:hover h1{
     
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,1);
     
 }
 
@@ -252,8 +313,8 @@ a{
 
 #hover_img_div div{
     
-    height: 50vw;
-    width: 30vw;
+    height: 100vh;
+    width: 60vh;
     border-radius: 10px;
     box-shadow: 10px 4px 14px rgba(0, 0, 0, 0.12);
     transition: .5s;
@@ -300,11 +361,6 @@ a{
     
     width: 100%;
     margin-bottom: 5em;
-    
-}
-
-#people_text_holder{
-    
     margin-top: 7em;
     
 }
@@ -334,150 +390,33 @@ a{
 #container5{
     
     width: 100%;
-    overflow: hidden;
     
 }
 
-#people_card_holder{
+.worked-with-carousel{
     
-    display: flex;
-    padding: 2em;
-    z-index: 100;
-    justify-content: center;
+    width: 100%
     
 }
 
-#people_card_holder div{
+.worked-with-carousel .carousel-cell{
     
-    width: 16em;
-    height: 28em;
-    background-color: #eee;
-    border-radius: 4px;
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    margin: 0 2em;
+    height: 20vw;
+    width: 20vw;
+    
+}
+
+.worked-with-image{
+    
+    height: 20vw;
+    width: 20vw;
     background-position: center;
-    background-size: cover;
-    margin: auto .4em;
-    transition: 1s;
-    cursor: pointer
+    background-size: contain;
+    background-repeat: no-repeat;
     
 }
 
-#people_card_holder div:nth-child(1){
-    
-    height: 22em;
-    z-index: 3;
-    margin-right: -5em;
-    transform: translateX(-20em);
-    transition-delay: .3s
-   
-}
-
-#people_card_holder div:nth-child(2){
-    
-    height: 25em;
-    z-index: 4;
-    margin-right: -5em;
-    transform: translateX(-20em);
-    transition-delay: .1.5s
-   
-}
-
-#people_card_holder div:nth-child(3){
-    
-    z-index: 5;
-    transform: translateY(2em);
-   
-}
-
-#people_card_holder div:nth-child(4){
-    
-    height: 25em;
-    z-index: 4;
-    margin-left: -5em;
-    transform: translateX(20em);
-    transition-delay: .1.5s
-   
-}
-
-#people_card_holder div:nth-child(5){
-    
-    height: 22em;
-    z-index: 3;
-    margin-left: -5em;
-    transform: translateX(20em);
-    transition-delay: .3s
-   
-}
-
-#people_card_holder div span{
-    
-    position: absolute;
-    color: #000;
-    background-color: #fff;
-    padding: .5em 1em;
-    border-radius: 4px;
-    font-family: lato;
-    font-size: .8em;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    margin-bottom: -2em;
-    text-align: center;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
-    transition: .5s;
-    white-space: nowrap;
-    opacity: 0
-    
-}
-
-#people_card_holder div:nth-child(1) span{
-    
-    margin-left: -3em
-    
-}
-
-#people_card_holder div:nth-child(2) span{
-    
-    margin-left: -2.3em
-    
-}
-
-#people_card_holder div:nth-child(4) span{
-    
-    margin-left: 2.3em
-    
-}
-
-#people_card_holder div:nth-child(5) span{
-    
-    margin-left: 3em
-    
-}
-
-#people_card_holder div span::after {
-    content: "";
-    position: absolute;
-    bottom: 100%; /* At the bottom of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #fff transparent;
-}
-
-#people_card_holder div:hover span{
-    
-    margin-bottom: -3.4em;
-    opacity: 1
-       
-}
-
-#people_card_holder div span i{
-    
-    font-size: 1.05em;
-    margin-right: .7em
-    
-}
 
 #placeholder_container{
     
@@ -519,12 +458,11 @@ a{
 #container6{
     
     margin-top: 7em;
-    margin-bottom: 9em;
     overflow: hidden;
     
 }
 
-.carousel-cell {
+#container6 .carousel-cell {
     width: 46vw; /* half-width */
     height: 33vw;
     margin-left: 10px;
@@ -537,14 +475,14 @@ a{
     overflow: hidden
 }
 
-.carousel-cell iframe{
+#container6 .carousel-cell iframe{
     
     width: 100%;
     height: 100%;
     
 }
 
-.carousel-cell.is-selected {
+#container6 .carousel-cell.is-selected {
     
     opacity: 1
     
@@ -552,6 +490,7 @@ a{
 
 #container7{
     
+    margin-top: 9em;
     margin-bottom: 10em;
     cursor: pointer;
     
@@ -639,7 +578,133 @@ a{
         
 }
 
+@media only screen and (max-width: 500px){
+    
+    .carousel-cell{
+        width: 80vw;
+        height: 60vw
+    }
+    
+    #container7{
+    
+        margin-top: 5em ;
+        margin-bottom: 5em;
+    
+    }
+    
+    #container7 h1{
+        font-size: 1.8em
+    }
+    
+    #works_header h1{
+        
+        font-size: 2em
+    }
+    
+    #works_header p{
+        
+        font-size: 1.2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    #footer_stuff{
+        padding: 2em;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    #footer_stuff div{
+        padding: 0;
+        padding-bottom: 2em;
+    }
+    
+    #footer_stuff div p{
+        
+        font-size: 1em
+        
+    }
+    
+    #container4{
+    
+        margin-bottom: 1em;
+        margin-top: 4em;
 
+    }
+    
+    #people_text_holder h1{
+        font-size: 2em;
+    }
+    
+    #people_text_holder p{
+        margin: 1em 0;
+        padding: 2em;
+        padding-top: 0em;
+        font-size: 1.2em;
+    }
+    
+    #navbar h1{
+        font-size: 1.5em;
+        text-align: center;
+        padding-left: 1.7em
+    }
+    
+    #nav_menu{
+        display: none;
+    }
+
+    #social-icons i{
+        margin: .7em;
+    }
+    
+    #menu_icon{
+        color: black;
+        padding: .8em;
+    }
+    
+    #hover_img_div div:nth-child(1){
+        margin-left: -4em;
+    }
+    
+    #hover_img_div div{
+        
+        width: 100vw;
+        height: 70vh;
+        
+    }
+    
+    #hovers_text_div{
+        right: 0
+    }
+    
+    #hovers_text_div h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    #hovers_text_div p{
+        text-align: center;
+        font-size: 1.2em;
+        padding: 0 2em;
+        
+    }
+    
+    #container6 .carousel-cell {
+        
+        width: 80vw;
+        height: 60vw;
+        
+    }
+    
+    #vid_overlay h1{
+        font-size: 3em;
+    }
+    
+    #menu_icon{
+        display: block;
+    }
+    
+}
 
 
 

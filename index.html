@@ -7,49 +7,61 @@
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Raleway:200,400,500,700|Roboto:100,300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         
-    </head>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   </head>
     
     <body>
+        
+        <div id="mobile-menu-overlay">
+            
+            <i class="fas fa-times" id="mobile-menu-close"></i>
+        
+            <ul>
+            
+                <li>HOME</li>
+                <li><a href="./pages/works.html">WORKS</a></li>
+                <li><a href="./pages/team.html">KNOW ME</a></li>
+            
+            </ul>
+        
+        </div>
         
         <div id="navbar">
         
             <h1>MAHTIM SHAKIB</h1>
             
-            <div>
+            <div id="nav_menu">
             
                 <p><a href="#">HOME</a></p>
                 
                 <p><a href="./pages/works.html">WORKS</a></p>
                 
                 <p><a href="./pages/team.html">KNOW ME</a></p>
-                
                             
             </div>
+            
+            <i id="menu_icon" class="fas fa-bars"></i>
         
         </div>
         
         <div id="main_first">
         
-            <video autoplay muted loop id="bg_video">
-
-                <source type="video/mp4" src="./media/homeMedia/bg_movie.mp4">
-
-            </video>
+            <div id="bg_video">
+            
+                <video autoplay muted loop >
+                    <source type="video/mp4" src="./media/homeMedia/bg_movie.mp4">
+                </video>
+                
+            </div>
+            
         
             <div id="vid_overlay">
                 
                 <h1><a href="./pages/works.html">find great audio</a> <i class="fas fa-chevron-right"></i></h1>
                 
             </div>
-            
-        </div>
-        
-        <div id="ad-contianer-1">
-            
-            <div id="grameenphone-ad"></div>
             
         </div>
         
@@ -63,6 +75,13 @@
         
         </div>
         
+        <!-- Use this -->
+        <div id="ad-contianer-1">
+            
+            <div id="grameenphone-ad"></div>
+            
+        </div>
+        
         <div id="container2">
         
             <div id="container2Overlay"></div> 
@@ -73,7 +92,7 @@
             
             <div id="hovers_text_div">
                 
-                <h1>bangladesh's best</h1>
+                <h1>Best Sellers</h1>
                 <p>The best player in the industry is Music Factory. Get the top notch production quality every single time!</p>
                 
             </div>
@@ -101,7 +120,7 @@
         
             <div id="people_text_holder">
             
-                <h1>associate band : Arbovirus</h1>
+                <h1>Worked with</h1>
                 
                 <p>We have a group of really talented and skillful people for all of your needs. We can do<br> everything, absolutely everything. You don't even have to tell us what you need. We can<br> read your mind!</p>
             
@@ -111,29 +130,41 @@
         
         <div id="container5">
         
-            <div id="people_card_holder">
+            <div class="worked-with-carousel">
             
-                <div id="left1" style="background-image: url(https://farm66.static.flickr.com/65535/33822149888_766cdccee9_b.jpg)"><span><i class="fab fa-facebook-square"></i>Suharto Sherif</span></div>
-
-                <div id="left2" style="background-image: url(https://www.bagdoom.com/blog/wp-content/uploads/2016/04/10865888_10155190395725268_8012753077698418135_o-1-348x348.jpg)"><span><i class="fab fa-facebook-square"></i>Nafeez Al Amin</span></div>
-
-                <div id="middle" style="background-image: url(https://pbs.twimg.com/profile_images/882298347582742528/hl4eCbXL.jpg)"><span><i class="fab fa-facebook-square"></i>Sufi Maverick</span></div>
-
-                <div id="right2" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0f/Syed_Ziaur_Rahman_Turjo.JPG)"><span><i class="fab fa-facebook-square"></i>Asif Asgar Ranjan</span></div>
-
-                <div id="right1" style="background-image: url(https://pbs.twimg.com/profile_images/1035086499488837632/JOxOqHSy.jpg)"><span><i class="fab fa-facebook-square"></i>Aldnane Alam</span></div>
-
+                <div class="carousel-cell" >
+                    <div class="worked-with-image" style="background-image: url(./media/homeMedia/abc-radio.png)"></div>
+                </div>
+                
+                <div class="carousel-cell" >
+                    <div class="worked-with-image" style="background-image: url(./media/homeMedia/colors-fm.jpg)"></div>
+                </div>
+                
+                <div class="carousel-cell" >
+                    <div class="worked-with-image" style="background-image: url(./media/homeMedia/dhaka-fm.jpg)"></div>
+                </div>
+                
+                <div class="carousel-cell" >
+                    <div class="worked-with-image" style="background-image: url(./media/homeMedia/radio-next.png)"></div>
+                </div>
+                
+                <div class="carousel-cell" >
+                    <div class="worked-with-image" style="background-image: url(./media/homeMedia/foorti.png)"></div>
+                </div>
+                
+                
+            
             </div>
-        
+            
         </div>
         
         <div id="placeholder_container"></div>
         
         <div id="works_header">
         
-            <h1>our works</h1>
+            <h1>My works</h1>
             
-            <p>We have worked with big names like and They love us!</p>
+            <p>I have worked with big names like and They love us!</p>
         
         </div>
         
@@ -170,6 +201,42 @@
                     <iframe class="yv" width="966" height="543" src="https://www.youtube.com/embed/WNeLUngb-Xg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
                 </div> 
+                
+                <div class="carousel-cell" >
+                
+                    <iframe class="yv" src="https://www.youtube.com/embed/JtYa0rb_jGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div> 
+                
+                <div class="carousel-cell">
+                
+                    <iframe class="yv" src="https://www.youtube.com/embed/-Rf56TeiEBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div> 
+                
+                <div class="carousel-cell">
+                    
+                    <iframe class="yv" src="https://www.youtube.com/embed/ZQ5RCASdpuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div> 
+                
+                <div class="carousel-cell" >
+                
+                    <iframe class="yv" src="https://www.youtube.com/embed/JtYa0rb_jGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div> 
+                
+                <div class="carousel-cell">
+                
+                    <iframe class="yv" src="https://www.youtube.com/embed/-Rf56TeiEBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div> 
+                
+                <div class="carousel-cell">
+                    
+                    <iframe class="yv" src="https://www.youtube.com/embed/ZQ5RCASdpuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div> 
             
             </div>
         
@@ -177,7 +244,7 @@
     
         <div id="container7">
         
-            <h1><a href="./pages/works.html">check more out</a> <i class="fas fa-chevron-right"></i></h1>    
+            <h1><a href="./pages/works.html">Go to my songs</a> <i class="fas fa-chevron-right"></i></h1>    
         
         </div>
         
@@ -215,7 +282,7 @@
             
                 <div id="bottom_bar">
             
-                    <p>© ANEEK RAHMAN 2019 (UD)</p>
+                    <p>© Welkin IT 2020</p>
             
                 </div>
             
@@ -227,15 +294,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
             
         <script>
             
             $( document ).ready(function() {
                 
                 var windowHeight = $(window).height();
+                var windowWidth = $(window).width();
                 var changeNavBarHeight = windowHeight - 64;
-                var animateHoveringImagesHeight = (windowHeight * 2.2);
+                var animateHoveringImagesHeight = windowHeight + (windowWidth * .8);
                 var animateTeamCards = (windowHeight * 3.2);
                 
                 window.onscroll = function(){
@@ -254,7 +321,11 @@
                         })
                         $("#navbar div p").css({
                             "color": "#000"
-                        })
+                        });
+                        $("#menu_icon").css({
+                            "padding" : ".8em",
+                            "color" : "black"
+                        });
                     }else{
                         $("#navbar").css({
                             "background-color": "transparent",
@@ -268,102 +339,111 @@
                         $("#navbar div p").css({
                             "color": "#fff"
                         })
+                        
+                        $("#menu_icon").css({
+                            "padding" : "1.15em",
+                            "color" : "rgba(255,255,255,.5)"
+                        });
                     }
                     
                     if(document.body.scrollTop > animateHoveringImagesHeight 
                       || document.documentElement.scrollTop > animateHoveringImagesHeight){
                         
-                        $("#hover_img_div div:nth-child(1)").css({
-                            "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateX(0em)"
-                        })
-                        $("#hover_img_div div:nth-child(2)").css({
-                            "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateX(0em)"
-                        })
-                        $("#hover_img_div div:nth-child(3)").css({
-                            "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateX(0em)"
-                        })
-                        $("#hover_img_div div:nth-child(4)").css({
-                            "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateX(0em)"
-                        })
-                        setTimeout( function() {
+                        
+                        if(windowWidth > 500){
+                            
                             $("#hover_img_div div").css({
-                                'transition-delay':'0s',
-                                "transition": ".3s"
-                            });
-                       }, 800);
-                        
-                    }
-                    
-                    if(document.body.scrollTop > animateTeamCards 
-                      || document.documentElement.scrollTop > animateTeamCards){
-                        
-                        $("#people_card_holder div").css({
+                            "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateX(0em)"
+                            })
+                            setTimeout( function() {
+                                $("#hover_img_div div").css({
+                                    'transition-delay':'0s',
+                                    "transition": ".3s"
+                                });
+                           }, 800);
                             
-                            "transform": "none"
+                        }else{
                             
-                        })
-                        
-                        setTimeout( function() {
-                            $("#people_card_holder div").css({
-                                'transition-delay':'0s',
-                                "transition": ".3s"
-                            });
-                       }, 1300);
-                        
-                        
+                            $("#hover_img_div div").css({
+                            "transform": "rotateX(-5deg) rotateY(-15deg) rotate(-20deg) translateX(0em)"
+                            })
+                            
+                            setTimeout( function() {
+                                $("#hover_img_div div").css({
+                                    'transition-delay':'0s',
+                                    "transition": ".3s"
+                                });
+                           }, 800);
+                            
+                        }
+                                                
                     }
-                    
-                    
-                    
+                                        
                     
                 };  
+                
+                if(windowWidth > 500){
+                    
+                    $("#hover_img_div div").hover(function(){
+                        $(this).css({
+                            "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateY(-5em)"
+                        })
+                    }, function(){
+                        $(this).css({
+                            "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateY(0em)"
+                        })
+
+                    });
+                    
+                }else{
+                    
+                   $("#hover_img_div div").hover(function(){
+                        $(this).css({
+                            "transform": "rotateX(-5deg) rotateY(-15deg) rotate(-20deg) translateY(-5em)"
+                        })
+                    }, function(){
+                        $(this).css({
+                            "transform": "rotateX(-5deg) rotateY(-15deg) rotate(-20deg) translateY(0em)"
+                        })
+
+                    }); 
+                    
+                }
             
                 
-                $("#hover_img_div div").hover(function(){
-                    $(this).css({
-                        "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateY(-5em)"
-                    })
-                }, function(){
-                    $(this).css({
-                        "transform": "rotateX(-35deg) rotateY(-15deg) rotate(-35deg) translateY(0em)"
-                    })
-                    
-                });
                 
-                $("#people_card_holder div").hover(function(){
-                    $(this).css({
-                        "transform": "translateY(-2em)"
-                    })
-                }, function(){
-                    $(this).css({
-                        "transform": "translateY(0em)"
-                    })
-                    
-                });
-                
-                  
                 
                 $('.main-carousel').flickity({
                     // options
                     cellAlign: 'center',
                     contain: true,
                     pageDots: false,
-                    initialIndex: 1
-                });
-               
-                $('.main-carousel').on( 'change.flickity', function( event, index ) {
-                    
-                    $('.yv').each(function(){
-                        
-                        /* Make this work
-                        var iframeSrc = $(this).attr("src");
-                        $(this).attr("src", iframeSrc);
-                        */
-                        
-                    })
-                    
+                    initialIndex: 1,
+                    wrapAround: true
                 });
                 
+                
+                $('.worked-with-carousel').flickity({
+                    // options
+                    cellAlign: 'center',
+                    contain: true,
+                    pageDots: false,
+                    initialIndex: 3,
+                    wrapAround: true
+                });
+                
+                $("#menu_icon").on("click",function(){
+                    
+                    $("#mobile-menu-overlay").css("display", "flex").hide().fadeIn(300);
+                    
+                })
+                
+                $("#mobile-menu-close, #mobile-menu-overlay, #mobile-menu-overlay ul li:nth-child(1)").on("click",function(){
+                    
+                    $("#mobile-menu-overlay").fadeOut(300)
+                    
+                })
+                            
             
             });
                 
